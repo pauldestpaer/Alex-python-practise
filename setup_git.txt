@@ -1,0 +1,8 @@
+1 - Get personal access token. Go Settings, Developer Settings, Generate new token
+
+2 - Download the repo we will share to a local folder. 
+	a - Open the folder above where it should go and type git init
+	b - Type 'git clone https://<token from above>@github.com/pauldestpaer/Alex-python-practise Alex-python-practise
+
+This should clone the contents of the repo (not much) to a local drive. This will then allow us to share stuff
+
