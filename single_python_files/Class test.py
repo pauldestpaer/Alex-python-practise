@@ -5,17 +5,17 @@ class Cats:
         return "cats are great"
     def Rating(self):  
         if self._rating > 50:
-           print("this cat is good its rating is ",self._rating)
+           return "this cat is good its rating is " + str(self._rating)
         elif self._rating == 50:
-           print("this cat is mid its rating is ",self._rating)
+           return "this cat is mid its rating is " + str(self._rating)
         else:
-            print("this cat sucks its rating is ",self._rating)
+            return "this cat sucks its rating is " + str(self._rating)
     def Better(self, ratingnumber):
         self._rating = self._rating + ratingnumber
-        print("rating improved by ", ratingnumber)
+        return "rating improved by " + str(ratingnumber)
     def Worse(self, ratingnumber):
         self._rating = self._rating - ratingnumber
-        print("rating reduced by ", ratingnumber)
+        return "rating reduced by " + str(ratingnumber)
 
 print(Cats.opinion())
 splodge = Cats()
@@ -26,3 +26,12 @@ mob.Worse(50)
 splodge.Rating()
 timtam.Rating()
 mob.Rating()
+
+my_cats = []
+my_cats.append(splodge)
+my_cats.append(timtam)
+my_cats.append(mob)
+
+for cat in my_cats:
+    rating = cat.Rating()
+    print(rating)
